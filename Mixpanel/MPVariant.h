@@ -77,6 +77,6 @@
 @end
 
 @interface MPVariantTweak : NSObject <NSCoding>
-- (int)variantIntValue;
-- (id)vararantObjectValue;
+- (MPTweakValue)variantValue;
+- (BOOL)isVariantValueNull;
 @end

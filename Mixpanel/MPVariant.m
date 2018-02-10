@@ -703,7 +703,7 @@ static NSMapTable *originalCache;
     MPTweak *mpTweak = [[MPTweakStore sharedInstance] tweakWithName:self.name];
     if (mpTweak) {
         //TODO, this may change, but for now sending an NSNull will revert the MPTweak back to its default.
-        if ([self isValueNil]) {
+        if ([self isVariantValueNull]) {
             mpTweak.currentValue = mpTweak.defaultValue;
         } else {
             mpTweak.currentValue = self.value;
@@ -725,15 +725,12 @@ static NSMapTable *originalCache;
 
 #pragma mark Getters
 
--(BOOL)isValueNil{
+-(BOOL)isVariantValueNull{
     return [self.value isKindOfClass:[NSNull class]];
 }
 
-- (int)variantIntValue{
-    if (strcmp([self.encoding UTF8String], @encode(int)) != 0) {
-        return 0;
-    }
-    return (int)self.value;
+- (MPTweakValue)variantValue{
+    return (MPTweakValue)self.value;
 }
 
 
