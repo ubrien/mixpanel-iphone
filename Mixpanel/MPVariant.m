@@ -734,14 +734,6 @@ static NSMapTable *originalCache;
 }
 
 
-- (id)variantObjectValue{
-     if (strcmp(*entry->encoding, @encode(id)) != 0) {
-         return nil;
-     }
-    return (id)self.value;
-}
-
-
 #pragma mark Equality
 
 - (BOOL)isEqualToTweak:(MPVariantTweak *)tweak {
