@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
   s.ios.source_files  = 'Mixpanel/**/*.{m,h}'
   s.ios.exclude_files = 'Mixpanel/MixpanelWatchProperties.{m,h}'
-  s.ios.public_header_files = 'Mixpanel/Mixpanel.h', 'Mixpanel/MixpanelPeople.h', 'Mixpanel/MPTweak.h', 'Mixpanel/MPTweakInline.h', 'Mixpanel/MPTweakInlineInternal.h', 'Mixpanel/MPTweakStore.h', 'Mixpanel/_MPTweakBindObserver.h'
+  s.ios.public_header_files = 'Mixpanel/Mixpanel.h', 'Mixpanel/MixpanelPeople.h', 'Mixpanel/MPTweak.h', 'Mixpanel/MPVariant.h', 'Mixpanel/MPTweakInline.h', 'Mixpanel/MPTweakInlineInternal.h', 'Mixpanel/MPTweakStore.h', 'Mixpanel/_MPTweakBindObserver.h'
   s.ios.private_header_files = 'Mixpanel/MixpanelPeoplePrivate.h', 'Mixpanel/MPNetworkPrivate.h', 'Mixpanel/MixpanelPrivate.h'
   s.ios.resources   = ['Mixpanel/**/*.{png,storyboard,xib}']
   s.ios.frameworks = 'UIKit', 'Foundation', 'SystemConfiguration', 'CoreTelephony', 'Accelerate', 'CoreGraphics', 'QuartzCore', 'StoreKit', 'UserNotifications'
