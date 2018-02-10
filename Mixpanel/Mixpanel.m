@@ -1991,6 +1991,9 @@ static void MixpanelReachabilityCallback(SCNetworkReachabilityRef target, SCNetw
 }
 
 #pragma mark - Mixpanel A/B Testing (Experiment)
+- (NSSet*)decidedVariants{
+    return self.variants;
+}
 
 - (void)executeCachedVariants {
     for (MPVariant *variant in self.variants) {

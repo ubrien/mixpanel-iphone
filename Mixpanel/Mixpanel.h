@@ -128,6 +128,8 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (atomic) BOOL checkForVariantsOnActive;
 
+
+
 /*!
  Controls whether to automatically check for and show in-app notifications
  for the currently identified user when the application becomes active.
@@ -654,6 +656,11 @@ NS_ASSUME_NONNULL_BEGIN
                                         joined and applied
  */
 - (void)joinExperimentsWithCallback:(nullable void (^)(void))experimentsLoadedCallback;
+
+/*!
+ Allows access to activa variants for advanced manipulation
+ */
+- (NSSet*)decidedVariants;
 
 #endif // MIXPANEL_NO_NOTIFICATION_AB_TEST_SUPPORT
 
