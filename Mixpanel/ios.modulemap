@@ -3,6 +3,7 @@ framework module Mixpanel {
     header "MixpanelPeople.h"
     header "MPTweak.h"
     header "MPVariant.h"
+    header "MPTweak.h"
     header "MPTweakInline.h"
     header "MPTweakInlineInternal.h"
     header "MPTweakStore.h"

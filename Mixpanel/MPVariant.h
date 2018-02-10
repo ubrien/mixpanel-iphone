@@ -12,7 +12,7 @@
 
 @property (nonatomic) NSUInteger ID;
 @property (nonatomic) NSUInteger experimentID;
-
+@property (nonatomic, strong) NSMutableArray *tweaks;
 /*!
  Whether this specific variant is currently running on the device.
 
