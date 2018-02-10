@@ -729,8 +729,8 @@ static NSMapTable *originalCache;
     return [self.value isKindOfClass:[NSNull class]];
 }
 
-- (MPTweakValue)variantValue{
-    return (MPTweakValue)self.value;
+- (id)variantValue{
+    return (id)self.value;
 }
 
 
